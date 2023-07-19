@@ -2,7 +2,63 @@
 <html>
 <body>
 
-<h2>Prototyping Human-AI interactions</h2>
+<h2>Prototyping human-AI interactions: designing interactions between models and users</h2>
+
+<h3>Introduction</h3>
+Designing Human-AI (HAI) interactions remains a challenging task. AI models are both complex and uncertain, providing a particular design challenge [1]. There are also challenges that arise during the collaboration between engineers and designers, as abstractions leak and concepts need to be re-negotiated [2]. At the same time, the design space is expanding. As well as human-centered AI methods such as Human-in-the-Loop (HITL) and explainable AI (XAI), new interaction paradigms can extend the design space of HAI interactions by, for instance, enabling users to interact with models in teaching-learning and collaborative learning processes [3,4], or negotiation-based interactions [5]. Part of the issue is a lack of consistent language to describe interactions between humans and models. There is considerable work on low level descriptions, including frameworks and tools which focus on the dataflow representations of  pre-processing ML pipelines [6] or the processes and data structures used in hybrid (data-driven and knowledge-based) AI systems [7]. However, we lack systems that formally model the ways that humans interact with these systems, and in particular ways to think about the multiple actors that might interact with a real-world machine learning system once it is deployed.
+In order to address this, we have developed a model that builds on communicative acts to provide a specification for interactions between (multiple) human users and models, drawing on considerations from human-centred AI approaches, including explainability and interactivity. It allows for modelling the flows of data between human actors and ML systems as communicative exchanges that can be understood in natural language terms but also provide a semi-formal specification for the underlying protocol. This is aimed at making the design of ML systems open to a wider set of potential creators by providing a simple articulation of system properties that can be rapidly understood, but remains technologically grounded. Designing in this way supports creative ideation around the emerging computational possibilities of machine learning, providing clear objects for discussion as well as ways to share common interactional structures.
+
+<h3>The workshop</h3>
+This half day tutorial workshop aims to bring together designers, engineers, and practitioners to explore this new method for prototyping interactions between users and AI models. Through a combination of paper and screen based tools, we will take participants through this approach to designing Human-AI interactions. We will show how this approach can describe a range of common interaction paradigms such as XAI and HITL, and guide participants in creating their own representations.
+Participants will follow structured paper-and-card based design exercises that articulate the core concepts through worked examples, and then adapt these to their own case studies. They will also use a screen-based tool that supports model-informed prototyping [8], to work towards higher fidelity understandings of interactions with models. Finally, we will support them in relating the choice of interactional structure to high level guidelines for HAI design.
+The main outcome of the workshop will be the interactions with the participants and the development of understanding of how to model HAI interactions. We will produce a set of example HAI interaction designs based on participant’s case studies that can be brought together as a collaborative publication. We will also develop insights towards applying best practices based on frameworks and methodologies for human-AI interaction prototyping. 
+Topics and subtopics that are in scope: Human-AI interaction, Human-Centered Design, Design with AI/ML models, Interaction Design, Model-informed Prototyping, Design Patterns
+
+<h3>Organizers</h3>
+-	Konstantinos Tsiakas, TU Delft
+-	Mahan Mehrvarz, TU Delft
+-	Dave Murray-Rust, TU Delft
+
+<h3>Schedule</h3>
+-	Welcome and introduction 
+-	Presentation and Tutorial  
+-	Description of use cases and activities (including submissions from participants)
+-	Group activities
+-	Feedback session and Discussion
+-	Wrap-up and Closing
+
+<h3>Submit your own use case (not for publication)</h3>
+Workshop participants can submit their own use case to be included in the workshop activities. In this way, participants will have the opportunity to design interactions and get insights from each other for a variety of use cases – including their own. The use case description should be 1-2 pages (PDF - free format) and include the following: 
+-	Overview: a short description of the situation in which models are to be deployed, and what the goals and reasons for doing so are.
+-	Description of the AI/ML model(s): what model or models form the core of your case study? What are their inputs and outputs, what forms of explanation or interactivity do they provide, and what is important to know about their internal functioning?
+-	Description of the human user(s): what are the various roles present, both directly and indirectly affected by the models?
+-	Scenarios for interactions between user(s) and model(s): what interaction scenarios do you initially have in mind?
+-	Optional: figures/links for model 
+
+Note: workshop participation is not dependent on having an accepted case study – participants will be welcome to join the workshop and work on other examples.
+
+Deadline for submissions/use cases: September 25, 2023
+Notification date: October 5, 2023 
+(these deadlines are slightly later, as participation is not dependent on the submission, and we would like to have a submission date after the CHI deadline, which many potential participants will be working towards)
+
+How will you keep participants debating, interacting, and/or creating throughout the workshop? Workshop participants will be actively involved in group activities, including design exercises using card-based and screen-based materials, and round-table discussions and feedback sessions. Attendees will have the chance to present their own use cases and scenarios, and receive feedback, through the group activities and discussions. We expect that such activities will provide us with insights about new ways to prototype interactions between users and models.    
+
+What proportion of the time (approximately) will be spent on non-interactive activities (e.g., listening to talks)? The workshop is mainly interactive. The presentation will provide an overview of the modelling approach and will be followed by group activities and feedback sessions. The workshop participants will have the opportunity to work and discuss their outputs with each other.   
+
+How will you advertise your workshop? We encourage organizers to consider sending announcements to channels that will reach a diverse group of people.
+We will use our extensive networks to bring in participants from Europe and beyond, through advertising on Twitter, LinkedIn as well as existing email lists. We will build on local communities and initiatives around Delft, including the AI&Design community and CHINL to reach a variety of people including those who are not traditional HCOMP attendees.
+
+References
+1.	Yang, Qian, et al. "Re-examining whether, why, and how human-AI interaction is uniquely difficult to design." Proceedings of the 2020 chi conference on human factors in computing systems. 2020.
+2.	Subramonyam, Hariharan, et al. "Solving Separation-of-Concerns Problems in Collaborative Design of Human-AI Systems through Leaky Abstractions." Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems. 2022.
+3.	Kim, Hankyung, and Youn-kyung Lim. "Teaching-learning interaction: a new concept for interaction design to support reflective user agency in intelligent systems." Designing Interactive Systems Conference 2021. 2021.
+4.	Wiethof, Christina, and E. Bittner. "Hybrid intelligence-combining the human in the loop with the computer in the loop: a systematic literature review." Forty-Second International Conference on Information Systems, Austin. 2021.
+5.	Alfrink, Kars, et al. "Contestable AI by Design: Towards a Framework." Minds and Machines (2022): 1-27.
+6.	Yang, Ke, et al. "Fairness-Aware Instrumentation of Preprocessing~ Pipelines for Machine Learning." Workshop on Human-In-the-Loop Data Analytics (HILDA'20). 2020.
+7.	van Bekkum, Michael, et al. "Modular design patterns for hybrid learning and reasoning systems: a taxonomy, patterns and use cases." Applied Intelligence 51.9 (2021): 6528-6546.
+8.	Subramonyam, Hariharan, Colleen Seifert, and Eytan Adar. "Protoai: Model-informed prototyping for ai-powered interfaces." 26th International Conference on Intelligent User Interfaces. 2021.
+
+
 
 </body>
 </html> 
