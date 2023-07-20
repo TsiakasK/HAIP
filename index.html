@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Define an action</h2>
+
+action name:<input type="text" id="action_name" name="action_name" value=""><br>
+primitive:<select id="primitive" name="primitive">
+				<option value="provide">provide</option>
+				<option value="request">request</option>
+			</select><br>
+X-type: <select id="Xtype1" name="Xtype1">
+			<option value="input">input</option>
+			<option value="output">output</option>
+			<option value="feedback">feedback</option>
+		</select>
+		<select id="Xtype2" name="Xtype2">
+			<option value="none">  </option>
+			<option value="input">input</option>
+			<option value="output">output</option>
+			<option value="feedback">feedback</option>
+		</select>
+		<select id="Xtype3" name="Xtype3">
+			<option value="none">  </option>
+			<option value="input">input</option>
+			<option value="output">output</option>
+			<option value="feedback">feedback</option>
+		</select>
+		array: <input type="checkbox" id="x-array" name="x-array" value="Array"><br>
+Y-type: <select id="Ytype1" name="Ytype1">
+			<option value="none">  </option>
+			<option value="input">input</option>
+			<option value="output">output</option>
+			<option value="feedback">feedback</option>
+		</select>
+		<select id="Ytype2" name="Ytype2">
+			<option value="none">  </option>
+			<option value="input">input</option>
+			<option value="output">output</option>
+			<option value="feedback">feedback</option>
+		</select>
+		<select id="Ytype3" name="Ytype3">
+			<option value="none">  </option>
+			<option value="input">input</option>
+			<option value="output">output</option>
+			<option value="feedback">feedback</option>
+		</select>
+		array: <input type="checkbox" id="x-array" name="x-array" value="Array"><br>
+operations: <select id="ops1" name="ops1">
+				<option value="none">  </option>
+				<option value="create">create</option>
+				<option value="select">select</option>
+				<option value="modify">modify</option>
+				<option value="map">map</option>
+			</select> <select id="ops1t" name="ops1t">
+				<option value="none">  </option>
+				<option value="X"> (X) </option>
+				<option value="Y">(Y)</option>
+				<option value="XY">(X,Y)</option>
+			</select> ---  
+			<select id="Ytype2" name="Ytype2">
+				<option value="none">  </option>
+				<option value="create">create</option>
+				<option value="select">select</option>
+				<option value="modify">modify</option>
+				<option value="map">map</option>
+			</select> </select> <select id="ops1t" name="ops1t">
+				<option value="none">  </option>
+				<option value="X"> (X) </option>
+				<option value="Y">(Y)</option>
+				<option value="XY">(X,Y)</option>
+			</select> --- 
+			<select id="Ytype3" name="Ytype3">
+				<option value="none">  </option>
+				<option value="create">create</option>
+				<option value="select">select</option>
+				<option value="modify">modify</option>
+				<option value="map">map</option>
+			</select> </select> <select id="ops1t" name="ops1t">
+				<option value="none">  </option>
+				<option value="X"> (X) </option>
+				<option value="Y">(Y)</option>
+				<option value="XY">(X,Y)</option>
+			</select> <br>
+<button type="button" onclick="addAction()">Add Action</button>
+
+<h2>Define a message</h2>
+
+message name:<input type="text" id="message_name" name="message_name" value="">
+context:<input type="text" id="context" name="context" value=""><br>
+sender: <select id="sender" name="sender">
+				<option value="user">user</option>
+				<option value="model">model</option>
+		</select> -  receiver: <select id="receiver" name="receiver">
+				<option value="user">user</option>
+				<option value="model">model</option>
+		</select> ---- <select id="actionID" name="actionID">
+				<option value="none">  </option>
+			</select> - <select id="mods" name="mods">
+				<option value="none">   </option>
+				<option value="x">X:</option>
+				<option value="y">Y:</option>
+			</select> <input type="text" id="modX" name="modX" value=""> </select> - <select id="mods" name="mods">
+				<option value="none">   </option>
+				<option value="x">X:</option>
+				<option value="y">Y:</option>
+			</select> <input type="text" id="modY" name="modY" value=""><br>
+<button type="button" onclick="addMessage()">Add Message</button>
+
+<h2>Define a pattern</h2>
+
+pattern name:<input type="text" id="pattern_name" name="pattern_name" value=""><br>
+Add message 1: 
+<select id="msg1" name="msg1">
+	<option value="none">	</option>
+</select> <br>
+Add message 2:
+<select id="msg2" name="msg2">
+	<option value="none">	</option>
+</select> <br>
+Add message 3:
+<select id="msg3" name="msg3">
+	<option value="none">	</option>
+</select> <br>
+<button type="button" onclick="addPattern()">Add Pattern</button>
+
+<h2>Design an interaction</h2>
+<button type="button" onclick="window.location.href='design.html';">Go to workspace</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> 

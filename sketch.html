@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="sketch.css">
+	<script>
+	function allowDrop(ev) {
+	  ev.preventDefault();
+	}
+
+	function drag(ev) {
+	  ev.dataTransfer.setData("text", ev.target.id);
+	}
+
+	function drop(ev) {
+	  ev.preventDefault();
+	  var data = ev.dataTransfer.getData("text");
+	  ev.target.appendChild(document.getElementById(data));
+	}
+	</script>
+</head>
+<body>
+
+<div class="container">
+  <div class="menu">
+	<div class="sidenav">
+	  <button class="dropdown-btn">Use Cases
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-container">
+		<a href="#">Models and Users</a>
+		<a href="#">Materials</a>
+		<a href="#">Scenarios</a>
+	  </div>
+	  <button class="dropdown-btn">Design Materials
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-container">
+		<a href="#">Types</a>
+		<a href="#">Messages</a>
+		<a href="#">Patterns</a>
+	  </div>
+	  <a href="#contact">Actions</a>
+	</div>
+
+
+  </div>
+  <div class="sketch"> 
+		<h3>Sketch</h3> 
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  <div class="controls"> control materials</div>
+  <div class="preview">material preview <br>
+  <img id="drag1" src="a1.bmp" draggable="true" ondragstart="drag(event)" width="160px" height="120px">
+  <img id="drag2" src="a2.bmp" draggable="true" ondragstart="drag(event)" width="160px" height="120px">
+  </div>
+  <div class="UI">UI</div>
+</div>
+
+<script> 
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html> 
+
+

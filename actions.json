@@ -1,0 +1,41 @@
+{
+  "actions": [
+    {
+      "aID": 1,
+	  "name": "annotate-sample",
+      "primitive": "provide", 
+	  "X-type": "output",
+	  "isXarray": 0,
+	  "Y-type": "input", 
+	  "isXarray": 0,
+	  "Xop": "", 
+	  "Yop": "", 
+	  "XYop": "map"
+    }
+	{
+      "aID": 2,
+	  "name": "select-sample",
+      "primitive": "provide", 
+	  "X-type": "input",
+	  "isXarray": 0,
+	  "Y-type": "input", 
+	  "isXarray": 1,
+	  "Xop": "select", 
+	  "Yop": "", 
+	  "XYop": ""
+    }
+	{
+      "aID": 3,
+	  "name": "request-sample-class",
+      "primitive": "request", 
+	  "X-type": "output",
+	  "isXarray": 0,
+	  "Y-type": "input", 
+	  "isXarray": 0,
+	  "Xop": "", 
+	  "Yop": "", 
+	  "XYop": "map"
+    }
+	
+  ]
+}
