@@ -1,34 +1,132 @@
-<!DOCTYPE html>
-<html>
-<body>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Prototyping human-AI interactions: designing interactions between models and users</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-menu.css" rel="stylesheet">
+</head>
 
-<h2>PHAI: Prototyping Human-AI interactions: designing interactions between models and users</h2>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+            </div>
 
-<h3>Introduction</h3>
-Designing Human-AI (HAI) interactions remains a challenging task. AI models are both complex and uncertain, providing a particular design challenge [1]. There are also challenges that arise during the collaboration between engineers and designers, as abstractions leak and concepts need to be re-negotiated [2]. At the same time, the design space is expanding. As well as human-centered AI methods such as Human-in-the-Loop (HITL) and explainable AI (XAI), new interaction paradigms can extend the design space of HAI interactions by, for instance, enabling users to interact with models in teaching-learning and collaborative learning processes [3,4], or negotiation-based interactions [5]. Part of the issue is a lack of consistent language to describe interactions between humans and models. There is considerable work on low level descriptions, including frameworks and tools which focus on the dataflow representations of  pre-processing ML pipelines [6] or the processes and data structures used in hybrid (data-driven and knowledge-based) AI systems [7]. However, we lack systems that formally model the ways that humans interact with these systems, and in particular ways to think about the multiple actors that might interact with a real-world machine learning system once it is deployed.
-In order to address this, we have developed a model that builds on communicative acts to provide a specification for interactions between (multiple) human users and models, drawing on considerations from human-centred AI approaches, including explainability and interactivity. It allows for modelling the flows of data between human actors and ML systems as communicative exchanges that can be understood in natural language terms but also provide a semi-formal specification for the underlying protocol. This is aimed at making the design of ML systems open to a wider set of potential creators by providing a simple articulation of system properties that can be rapidly understood, but remains technologically grounded. Designing in this way supports creative ideation around the emerging computational possibilities of machine learning, providing clear objects for discussion as well as ways to share common interactional structures.
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Workshop Description</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#schedule">Schedule</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#submit">Submit your Materials</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>	<!-- .navbar-collapse -->
+        </div>		<!-- .container -->
+    </nav>
+    <!-- Welcome   -->
+    <section id="welcome" class="welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Prototyping Human-AI Interactions</h1>
+                    Designing Human-AI (HAI) interactions remains a challenging task. AI models are both complex and uncertain, providing a particular design 
+					challenge [1]. There are also challenges that arise during the collaboration between engineers and designers, as abstractions leak and 
+					concepts need to be re-negotiated [2]. At the same time, the design space is expanding. As well as human-centered AI methods such as 
+					Human-in-the-Loop (HITL) and explainable AI (XAI), new interaction paradigms can extend the design space of HAI interactions by, for instance,
+					enabling users to interact with models in teaching-learning and collaborative learning processes [3,4], or negotiation-based interactions [5].
+					Part of the issue is a lack of consistent language to describe interactions between humans and models. There is considerable work on low level
+					descriptions, including frameworks and tools which focus on the dataflow representations of  pre-processing ML pipelines [6] or the processes 
+					and data structures used in hybrid (data-driven and knowledge-based) AI systems [7]. However, we lack systems that formally model the ways 
+					that humans interact with these systems, and in particular ways to think about the multiple actors that might interact with a real-world 
+					machine learning system once it is deployed. In order to address this, we have developed a model that builds on communicative acts to provide 
+					a specification for interactions between (multiple) human users and models, drawing on considerations from human-centred AI approaches,
+					including explainability and interactivity. It allows for modelling the flows of data between human actors and ML systems as communicative 
+					exchanges that can be understood in natural language terms but also provide a semi-formal specification for the underlying protocol. This is 
+					aimed at making the design of ML systems open to a wider set of potential creators by providing a simple articulation of system properties 
+					that can be rapidly understood, but remains technologically grounded. Designing in this way supports creative ideation around the emerging 
+					computational possibilities of machine learning, providing clear objects for discussion as well as ways to share common interactional 
+					structures.
+					<p>This site used <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a>.</p>
+					<p>&nbsp;</p>
+                    <!-- <a class="btn btn-primary page-scroll" href="#about">Click To Scroll Down!</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h3>The workshop</h3>
-This half day tutorial workshop aims to bring together designers, engineers, and practitioners to explore this new method for prototyping interactions between users and AI models. Through a combination of paper and screen based tools, we will take participants through this approach to designing Human-AI interactions. We will show how this approach can describe a range of common interaction paradigms such as XAI and HITL, and guide participants in creating their own representations.
-Participants will follow structured paper-and-card based design exercises that articulate the core concepts through worked examples, and then adapt these to their own case studies. They will also use a screen-based tool that supports model-informed prototyping [8], to work towards higher fidelity understandings of interactions with models. Finally, we will support them in relating the choice of interactional structure to high level guidelines for HAI design.
-The main outcome of the workshop will be the interactions with the participants and the development of understanding of how to model HAI interactions. We will produce a set of example HAI interaction designs based on participant’s case studies that can be brought together as a collaborative publication. We will also develop insights towards applying best practices based on frameworks and methodologies for human-AI interaction prototyping. 
-Topics and subtopics that are in scope: Human-AI interaction, Human-Centered Design, Design with AI/ML models, Interaction Design, Model-informed Prototyping, Design Patterns
+    <!-- About -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Wokrshop Description</h1>
+                </div>
+				This half day tutorial workshop aims to bring together designers, engineers, and practitioners to explore this new method for prototyping interactions between 
+users and AI models. Through a combination of paper and screen based tools, we will take participants through this approach to designing Human-AI interactions. 
+We will show how this approach can describe a range of common interaction paradigms such as XAI and HITL, and guide participants in creating their own representations.
+Participants will follow structured paper-and-card based design exercises that articulate the core concepts through worked examples, and then adapt these to their
+own case studies. They will also use a screen-based tool that supports model-informed prototyping [8], to work towards higher fidelity understandings of 
+interactions with models. Finally, we will support them in relating the choice of interactional structure to high level guidelines for HAI design. The main 
+outcome of the workshop will be the interactions with the participants and the development of understanding of how to model HAI interactions. We will produce 
+a set of example HAI interaction designs based on participant’s case studies that can be brought together as a collaborative publication. We will also develop 
+insights towards applying best practices based on frameworks and methodologies for human-AI interaction prototyping. 
 
-<h3>Organizers</h3>
-Konstantinos Tsiakas, TU Delft
-Mahan Mehrvarz, TU Delft
-Dave Murray-Rust, TU Delft
+            </div>
+        </div>
+    </section>
 
-<h3>Schedule</h3>
-Welcome and introduction 
-Presentation and Tutorial  
-Description of use cases and activities (including submissions from participants)
-Group activities
-Feedback session and Discussion
-Wrap-up and Closing
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Scechule (Tentantive)</h1>
+                </div>
+				Welcome and introduction 
+				Presentation and Tutorial  
+				Description of use cases and activities (including submissions from participants)
+				Group activities
+				Feedback session and Discussion
+				Wrap-up and Closing
+            </div>
+        </div>
+    </section>
 
-<h3>Submit your own use case (not for publication)</h3>
-Workshop participants can submit their own use case to be included in the workshop activities. In this way, participants will have the opportunity to design interactions and get insights from each other for a variety of use cases – including their own. The use case description should be 1-2 pages (PDF - free format) and include the following: 
+	 <!-- Submit Section -->
+    <section id="submit" class="submit-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Participation - Submit your own Materials</h1>
+                </div>
+				
+				Workshop participants can submit their own use case to be included in the workshop activities. In this way, participants will have the 
+				opportunity to design interactions and get insights from each other for a variety of use cases – including their own. Workshop participants 
+				will be actively involved in group activities, including design exercises using card-based and screen-based materials, and round-table discussions 
+				and feedback sessions. Attendees will have the chance to present their own use cases and scenarios, and receive feedback, through the group 
+				activities and discussions. We expect that such activities will provide us with insights about new ways to prototype interactions between users and 
+				models.The use case description should be 1-2 pages (PDF - free format) and include the following: 
 Overview: a short description of the situation in which models are to be deployed, and what the goals and reasons for doing so are.
 Description of the AI/ML model(s): what model or models form the core of your case study? What are their inputs and outputs, what forms of explanation or interactivity do they provide, and what is important to know about their internal functioning?
 Description of the human user(s): what are the various roles present, both directly and indirectly affected by the models?
@@ -40,13 +138,33 @@ Note: workshop participation is not dependent on having an accepted case study �
 Deadline for submissions use cases: September 25, 2023
 Notification date: October 5, 2023 
 (these deadlines are slightly later, as participation is not dependent on the submission, and we would like to have a submission date after the CHI deadline, which many potential participants will be working towards)
+            </div>
+        </div>
+    </section>
+	
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-How will you keep participants debating, interacting, and/or creating throughout the workshop? Workshop participants will be actively involved in group activities, including design exercises using card-based and screen-based materials, and round-table discussions and feedback sessions. Attendees will have the chance to present their own use cases and scenarios, and receive feedback, through the group activities and discussions. We expect that such activities will provide us with insights about new ways to prototype interactions between users and models.    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-What proportion of the time (approximately) will be spent on non-interactive activities (e.g., listening to talks)? The workshop is mainly interactive. The presentation will provide an overview of the modelling approach and will be followed by group activities and feedback sessions. The workshop participants will have the opportunity to work and discuss their outputs with each other.   
-
-How will you advertise your workshop? We encourage organizers to consider sending announcements to channels that will reach a diverse group of people.
-We will use our extensive networks to bring in participants from Europe and beyond, through advertising on Twitter, LinkedIn as well as existing email lists. We will build on local communities and initiatives around Delft, including the AI&Design community and CHINL to reach a variety of people including those who are not traditional HCOMP attendees.
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/sticky-menu.js"></script>
 
 </body>
-</html> 
+
+</html>
