@@ -66,8 +66,9 @@ html {
 .contact-section {
     height: 50%;
     padding-top: 10px;
-    text-align: center;
+    text-align: left;
     background: #fff;
+	font-size: 15px;
 }
 .submit-section {
     height: 150%;
@@ -87,3 +88,6 @@ html {
 .navbar-default .navbar-nav > li > a {
     color: #000;
 }
+
+
+
