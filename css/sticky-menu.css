@@ -44,33 +44,36 @@ html {
 }
 .welcome-section {
     height: 100%;
+	font-size: 20px;
     padding-top: 150px;
-    font-size: 20px;
     text-align: center;
     background: #fff;
 }
 .about-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: justify;
+    padding-top: 20px;
+    text-align: left;
+	font-size: 20px;
     background: #EFDECD;
 }
 .schedule-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: justify;
+    height: 60%;
+    padding-top: 50px;
+    text-align: left;
     background: #fff;
+	font-size: 20px;
 }
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: justify;
+    height: 50%;
+    padding-top: 10px;
+    text-align: center;
     background: #fff;
 }
 .submit-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    height: 150%;
+    padding-top: 50px;
+    text-align: left;
+	font-size: 20px;
     background: #EFDECD;
 }
 .navbar-default .navbar-nav > li > a:hover {
@@ -84,6 +87,3 @@ html {
 .navbar-default .navbar-nav > li > a {
     color: #000;
 }
-
-
-
