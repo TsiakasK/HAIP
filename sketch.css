@@ -7,7 +7,7 @@ body {
     height: 99%; 
 }
 
-#div1, #div2, #div3 {
+#div1, #div2, #div3, #div4 {
   float: left;
   width: 180px;
   height: 130px;
